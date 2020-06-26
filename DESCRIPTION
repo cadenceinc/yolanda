@@ -1,0 +1,28 @@
+Package: yolanda
+Title: General Purpose Functions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jared",
+           family = "Felice",
+           role = c("aut", "cre"),
+           email = "jared.felice@icloud.com")
+Description: This package is for general use.  There are several 
+ functions that are simply extensions of base operations like grep and paste, 
+ and others that make life easier such as the 'fmt_' functions and mapping 
+ functions.  Without them, life is harder, which makes me angry.  Thus the
+ name.  Yolanda is the character in 'Pulp Fiction' who stands up in a 
+ restaurant appearing particularly upset.  It's also the alter ego of 2 year
+ old daughter.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0)
+Imports: 
+    dplyr,
+    snakecase,
+    stats,
+    lubridate,
+    magrittr
