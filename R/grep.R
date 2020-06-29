@@ -16,6 +16,8 @@ grep_0 <- function(pattern, x, value = TRUE, invert = FALSE) {
 
 #' Grep Zero Vectorized
 #'
+#' Deprecated
+#'
 #' @param pattern character
 #' @param x character
 #'
