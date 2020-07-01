@@ -69,3 +69,13 @@ test_that("map_date works for fiscal week", {
   expect_identical(test_result, c("23 2020", "18 2020", "14 2020"))
 })
 
+
+# partial map values ------------------------------------------------------
+
+
+test_that("pmap_values works", {
+  test_vect <- c("one", "two", "three")
+  test_map <- stats::setNames(c("on|ten", "tw|eleven", "thre|twenty"), 1:3)
+  test_result <- pmap_values(test_vect, test_map)
+  expect_identical(test_result, paste0(1:3))
+})

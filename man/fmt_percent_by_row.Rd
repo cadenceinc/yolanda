@@ -4,7 +4,7 @@
 \alias{fmt_percent_by_row}
 \title{Format Dataframe Percent (Row)}
 \usage{
-fmt_percent_by_row(df, rows)
+fmt_percent_by_row(df, rows = 1:nrow(df))
 }
 \arguments{
 \item{df}{dataframe}

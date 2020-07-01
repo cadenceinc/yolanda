@@ -15,5 +15,5 @@ grep_v(pattern, x)
 vector
 }
 \description{
-Deprecated
+Grep Zero Vectorized
 }

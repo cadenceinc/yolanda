@@ -67,3 +67,18 @@ inter_cols <- function(df1, df2) {
 eval_sym <- function(x) {
   eval.parent(as.symbol(x))
 }
+
+#' Capitalize First Letter
+#'
+#' @param x character or vector
+#'
+#' @return character or vector
+#' @export
+#'
+cap_first <- function(x) {
+  stopifnot(is.character(x))
+  unlist(lapply(strsplit(x, split = " "), function(s) {
+    if (is.na(s[1])) return(NA)
+    paste0(toupper(substring(s, 1, 1)), substring(s, 2), collapse = " ")
+  }))
+}

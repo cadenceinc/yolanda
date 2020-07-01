@@ -4,7 +4,8 @@
 \alias{fmt_value_by_row_and_col}
 \title{Format Dataframe Values (Row and Column)}
 \usage{
-fmt_value_by_row_and_col(df, rows, cols = numeric_cols(df))
+fmt_value_by_row_and_col(df, rows = 1:nrow(df),
+  cols = numeric_cols(df))
 }
 \arguments{
 \item{df}{dataframe}

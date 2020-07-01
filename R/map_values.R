@@ -142,8 +142,6 @@ map_date <- function(values, style = "monthly") {
 
 #' Map Values - Partial
 #'
-#' Deprecated
-#'
 #' @param values vector of values to match/replace
 #' @param map named character vector to pass to 'grep_v'
 #' @param replacement replacement value.  If NULL (default) the original value

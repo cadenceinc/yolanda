@@ -18,5 +18,5 @@ is returned.}
 vector of same length as the original value.
 }
 \description{
-Deprecated
+Map Values - Partial
 }

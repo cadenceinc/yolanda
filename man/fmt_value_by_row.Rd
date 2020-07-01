@@ -4,7 +4,7 @@
 \alias{fmt_value_by_row}
 \title{Format Dataframe Values (Row)}
 \usage{
-fmt_value_by_row(df, rows)
+fmt_value_by_row(df, rows = 1:nrow(df))
 }
 \arguments{
 \item{df}{dataframe}
