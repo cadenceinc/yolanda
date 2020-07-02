@@ -82,3 +82,21 @@ cap_first <- function(x) {
     paste0(toupper(substring(s, 1, 1)), substring(s, 2), collapse = " ")
   }))
 }
+
+#' Depth
+#'
+#' This allows for finding the depth of a nested list
+#'
+#' @param x R object
+#' @param d numeric - starting depth.  Default = 0.
+#'
+#' @return numeric - showing the number of levels of the list.  0 is an object
+#'  that is not a list.
+#'
+#' @export
+#'
+depth <- function(x, d = 0) {
+  if (!inherits(x, "list")) return(d)
+  if ( inherits(x, "list") && length(x) == 0) return(d)
+  if ( inherits(x, "list")) return(max(unlist(lapply(x, depth, d = d + 1))))
+}
