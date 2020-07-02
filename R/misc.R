@@ -100,3 +100,5 @@ depth <- function(x, d = 0) {
   if ( inherits(x, "list") && length(x) == 0) return(d)
   if ( inherits(x, "list")) return(max(unlist(lapply(x, depth, d = d + 1))))
 }
+
+
