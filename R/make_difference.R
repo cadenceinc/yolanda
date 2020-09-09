@@ -13,6 +13,7 @@
 #'
 make_difference <- function(df, include_growth = FALSE) {
   nc <- numeric_cols(df)
+  if (length(nc) == 1) return(df)
   for (i in 2:length(nc)) {
     df[[paste0(nc[i], "_diff")]] <- calc_diff(df[[nc[1]]], df[[nc[i]]])
     if (include_growth) {
